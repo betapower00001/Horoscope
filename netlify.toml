@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "client/dist" # ถ้าใช้ Vite
+  # publish = "client/build" # ถ้าใช้ Create React App
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
