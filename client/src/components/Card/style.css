@@ -1,0 +1,53 @@
+.fortune-card {
+  position: relative;
+  background-image: url('../Img/bg-5.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #d4af37; /* สีทอง */
+  padding: 30px 20px;
+  border-radius: 15px;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fortune-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.fortune-card::before,
+.fortune-card::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.fortune-card::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.fortune-card::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+/* เพิ่มถ้าอยากมีแพ็กเกจแนะนำ highlight */
+.fortune-card.highlight {
+  border: 3px solid #ffffff;
+}
+
+/* แก้ไขขนาดตัวอักษรของ title */
+.fortune-card h5 {
+  font-size: 2rem; /* ขนาดตัวอักษรที่ใหญ่ขึ้น */
+  font-weight:200;
+  margin-bottom: 1rem;
+}

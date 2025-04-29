@@ -1,0 +1,124 @@
+.fortune-section {
+  position: relative;
+  /* ต้องเพิ่มเพื่อให้ ::before จัดตำแหน่งถูก */
+  background: linear-gradient(135deg, #45007e 30%, #9c017b 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  padding: 60px 0px;
+  text-align: center;
+  overflow: hidden;
+  /* เผื่อป้องกันภาพล้น */
+}
+
+.fortune-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Img/bg-4.jpg');
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 0;
+  /* <<< เพิ่มตรงนี้ ทำอักษรวางหน้าสุด */
+}
+
+.fortune-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.fortune-title {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+
+.fortune-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.fortune-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fortune-box {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.fortune-item {
+  margin-bottom: 40px;
+}
+
+.fortune-item .icon {
+  font-size: 40px;
+  color: #f36c9b;
+  margin-bottom: 10px;
+}
+
+.fortune-image img {
+  max-height: 500px;
+  width: auto;
+}
+
+.fortune-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fortune-banner img {
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+.fortune-pagket {
+
+  justify-content: center;
+  align-items: center;
+  background-image: url('../Img/bg-6.jpg');
+}
+
+.fortune-pagket img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.btn-purple {
+  background-color: #6f42c1 !important;
+  color: white !important;
+  border: none !important;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-purple:hover {
+  background-color: #5a32a3 !important;
+  transform: translateY(-2px);
+}
+
+.btn-purple-outline {
+  background-color: transparent !important;
+  color: #6f42c1 !important;
+  border: 2px solid #6f42c1 !important;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-purple-outline:hover {
+  background-color: #6f42c1 !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
