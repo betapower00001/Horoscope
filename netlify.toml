@@ -1,7 +1,7 @@
 [build]
+  base = "client"
   command = "npm run build"
-  publish = "client/dist" # ถ้าใช้ Vite
-  # publish = "client/build" # ถ้าใช้ Create React App
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
