@@ -23,7 +23,7 @@ export default function Header(): JSX.Element {
           <span>HOROSCOPE</span>
         </Navbar.Brand>
         <Nav className="ms-auto" style={{ alignItems: 'center', gap: '15px' }}>
-          <Nav.Link style={{ color: 'white' }}>🛒 {totalItems} รายการ</Nav.Link>
+          <Nav.Link style={{ color: 'white' }}>🛒 {totalItems} รายการ </Nav.Link>
           <Nav.Link href="https://facebook.com" target="_blank" style={{ color: 'white' }}>
             <FaFacebook size={20} />
           </Nav.Link>
